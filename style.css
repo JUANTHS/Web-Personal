@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+}
+/*fuente*/
+@font-face {
+  font-family: "Bebas";
+  src: url("../font/BEBAS___.ttf"); }
+@font-face {
+  font-family: "Helvetica";
+  src: url("../font/HelveticaNeue.ttf"); }
+body {
+  font-size: 18px;
+  color:black;
+  font-family: "helvetica"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas", Swis721 Cn BT;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 45px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 25px;
+  font-weight: 500; }
+
+h3 {
+  font-size: 20px;
+  font-weight: 500; }
+
+h4 {
+  font-size: 16px;
+  font-weight: 500; }
+
+.content_area {
+  border-left: 10px solid white;
+  border-right: 10px solid white; }
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
+    body header button {
+      background: #FFFFFF; }
+      body header button span {
+        background: #E7663C; }
+    body .main_content_area {
+      margin-top: 61px; }
+      body .main_content_area .carousel
+      img {
+        height: 490px;
+        max-width: 10000%;
+        width: 235%;
+        position: relative;
+        overflow: hidden;
+        right: 70%; }
+      body .main_content_area .service_area span {
+        margin-bottom: 9px; }
+      body .main_content_area .service_area h2 {
+        margin-left: 15px; }
+      body .main_content_area .service_area .single_blog_post {
+        margin-bottom: 20px; }
+      body .main_content_area .author_text .author_imagen {
+        width: 100%; }
+        body .main_content_area .author_text .author_imagen img {
+          margin: 0 83px 20px; }
+      body .main_content_area .tab-pane .col-md-3 {
+        margin-bottom: 20px; } }
+.header_area {
+  background: #333;
+  color: blue;
+  padding: 1% 0; }
+  .header_area h1 {
+    margin: 0;
+    color: #190dbe; }
+    .header_area h1 span {
+      color: rgba(231, 102, 60, 0.68); }
+  .header_area a {
+    font-family: "Bebas", Swis721 Cn BT;
+    color: #989898;
+    font-size: 20px;
+    font-weight: 500; }
+    .header_area a:hover {
+      background: white !important;
+      color: #E7663C; }
+
+.header_bottom_area {
+  height: 70px;
+  background: rgba(231, 102, 60, 0.68);
+  position: relative;
+  top: 70px;
+  z-index: -1; }
+
+.page_now {
+  background: darkcyan;
+  color: white;
+  height: 70px;
+  padding: 12px;
+  margin-bottom: 40px; }
+  .page_now h2 {
+    margin: 0; }
+
+.footer .single_footer_container {
+  background: aqua;
+  color: black;
+  border-left: 10px solid white;
+  border-right: 10px solid white; }
+
+.footer_area {
+  background: rgba(231, 102, 60, 0.68);
+  z-index: -1; }
+
+.aside h2 {
+  background-image: url("../images/heading-bg.png");
+  margin-top: 0;
+  color:rgb(218, 29, 23); }
+  .aside h2 span {
+    background: #FFFFFF;
+    padding-right: 20px; }
+.aside .about_jetro {
+  padding-bottom: 20px; }
+.aside .categories {
+  padding-bottom: 20px;
+  margin-top: 0;
+  color: #E7663C; }
+  .aside .categories a {
+    font-weight: 600;
+    color: #3E3E3E; }
+.aside .photo-gallery {
+  padding-bottom: 20px; }
+  .aside .photo-gallery h2 {
+    margin-bottom: 20px; }
+  .aside .photo-gallery .cube {
+    display: inline-block;
+    width: 23%;
+    height: 55px;
+    background: rgba(231, 102, 60, 0.68);
+    border: 1px solid #E7663C; }
+
+.slider_area img {
+  width: 100%; }
+.slider_area .carousel {
+  height: 490px;
+  overflow: hidden; }
+
+.service_area {
+  padding-bottom: 30px; }
+  .service_area h2 {
+    color: #E7663C;
+    width: 80%;
+    display: inline-block; }
+  .service_area span {
+    margin-top: 25px;
+    color: #E7663C;
+    font-size: 50px;
+    width: 16%; }
+  .service_area a {
+    padding: 5px 10px !important;
+    background: #E7663C;
+    font-family: "Bebas", Swis721 Cn BT !important;
+    font-size: 16px;
+    color: #FFFFFF !important;
+    text-transform: uppercase !important; }
+    .service_area a a {
+      color: #FFFFFF !important; }
+      .service_area a a:hover {
+        text-decoration: none !important;
+        background: #F44336 !important; }
+    .service_area a:hover {
+      text-decoration: none;
+      background: #F44336; }
+
+.from_blog, .from_works {
+  clear: both;
+  padding-bottom: 30px; }
+  .from_blog h2, .from_works h2 {
+    margin-bottom: 30px;
+    color: #E7663C;
+    background-image: url("../images/heading-bg.png"); }
+    .from_blog h2 span, .from_works h2 span {
+      background: #FFFFFF;
+      padding-right: 20px; }
+    .from_blog h2 span, .from_works h2 span {
+      background: #FFFFFF;
+      padding-right: 20px; }
+  .from_blog h3, .from_works h3 {
+    color: #989898; }
+  .from_blog h4, .from_works h4 {
+    color: #E7663C; }
+  .from_blog .blog_post_meta, .from_works .blog_post_meta {
+    border: 1px solid rgba(152, 152, 152, 0.23);
+    border-top: 0;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .from_blog img, .from_works img {
+    width: 100%; }
+
+.author_text {
+  text-align: justify;
+  padding-left: 0;
+  padding-bottom: 40px; }
+  .author_text .author_imagen {
+    width: 30%;
+    margin: 0; }
+  .author_text .cita {
+    border-left: 10px solid fuchsia;
+    color: teal;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .author_text .col-md-12 {
+    clear: both; }
+
+.blog-post {
+  padding-left: 0; }
+  .blog-post h3, .blog-post h2 {
+    color: #E7663C; }
+  .blog-post .separador {
+    background-image: url("../images/heading-bg.png");
+    height: 20px;
+    width: 100%;
+    margin-top: 40px; }
+    .blog-post .separador span {
+      background: #FFFFFF;
+      padding-right: 20px; }
+  .blog-post .boton {
+    background: #E7663C;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    left: -90px; }
+    .blog-post .boton:hover {
+      text-decoration: none;
+      background: #F44336; }
+    .blog-post .boton a {
+      font-size: 40px;
+      color: #FFFFFF; }
+      .blog-post .boton a:hover {
+        text-decoration: none;
+        background: #F44336; }
+  .blog-post .post {
+    position: relative;
+    padding-bottom: 50px; }
+    .blog-post .post img {
+      width: 100%; }
+    .blog-post .post .carousel {
+      height: 379px;
+      overflow: hidden; }
+    .blog-post .post .col-md-3 {
+      color: #989898; }
+    .blog-post .post .video-conteiner {
+      position: relative;
+      padding-bottom: 56.25%;
+      overflow: hidden; }
+      .blog-post .post .video-conteiner iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .blog-post .post .cita-container {
+      padding: 20px 25px 40px;
+      background: #F1F1F1; }
+      .blog-post .post .cita-container .quote {
+        width: 5%;
+        color: #E7663C;
+        font-size: 30px; }
+    .blog-post .post .link .pull-right {
+      width: 94%;
+      margin-top: 15px; }
+    .blog-post .post .link a {
+      color: #989898; }
+    .blog-post .post .link p {
+      margin-top: 20px; }
+
+.pagination a {
+  background: #E7663C !important;
+  font-family: "Bebas", Swis721 Cn BT;
+  font-size: 16px;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  border-radius: 0 !important;
+  margin: 5px; }
+  .pagination a:hover {
+    text-decoration: none !important;
+    background: #F44336 !important; }
+
+.nav-tabs {
+  border: none;
+  font-family: "Bebas", Swis721 Cn BT; }
+  .nav-tabs h2 {
+    margin: 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px; }
+  .nav-tabs a {
+    color: #989898; }
+  .nav-tabs .active a {
+    border-radius: 0 !important;
+    color: #FFFFFF !important;
+    background: #E7663C !important;}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+  position: -webkit-sticky; /*Safari*/
+  position: sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-content img {
+  width: 100%; }
+.tab-content .row {
+  margin: 40px 0; }
+.tab-content .describ {
+  border: 1px solid rgba(152, 152, 152, 0.23);
+  width: 100%;
+  margin-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  width: 100%; }
+  .tab-content .describ h3 {
+    margin-top: 10px;
+    color: #989898; }
+  .tab-content .describ h4 {
+    color: #E7663C; }
+
+.contact .mapa {
+  width: 100%;
+  margin-bottom: 40px; }
+  .contact .mapa img {
+    width: 100%; }
+.contact .col-md-3 span {
+  color: #E7663C; }
+.contact form {
+  margin-bottom: 50px; }
+  .contact form .form-group {
+    margin-bottom: 20px; }
+    .contact form .form-group input, .contact form .form-group textarea {
+      padding: 5px;
+      border: 1px solid #E7663C;
+      border-radius: 0;
+      font-family: "Bebas", Swis721 Cn BT;
+      text-tranform: uppercase; }
+    .contact form .form-group textarea {
+      height: 250px;
+      text-tranform: uppercase !important; }
+  .contact form button {
+    border-radius: 0;
+    font-size: 25px !important;
+    width: 100%;
+    border: none;
+    padding: 5px 5px !important;
+    background: #E7663C;
+    font-family: "Bebas", Swis721 Cn BT !important;
+    font-size: 16px;
+    color: #FFFFFF !important;
+    text-transform: uppercase !important; }
+    .contact form button a {
+      color: #FFFFFF !important; }
+      .contact form button a:hover {
+        text-decoration: none !important;
+        background: #F44336 !important; }
+
+/*# sourceMappingURL=style.css.map */
+
+footer a:hover {
+  color: white;
+}
+footer .layout .wrapper {
+  padding: 0px;
+  background: darkcyan;
+}
+footer .layout .wrapper .informacion {
+  display: none !important;
+}
+footer .layout .wrapper .redes-sociales {
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 16px;
+  float: none;
+}
+footer .layout .wrapper .informacion_movil {
+  display: block!important;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+
+footer .layout .wrapper .redes-sociales a.rs-links {
+  float: left;
+  margin-right: 6px;
+}
